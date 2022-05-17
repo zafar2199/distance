@@ -1,0 +1,46 @@
+.navbar {
+    background-color: $mainColor;
+    padding: 8px 0;
+
+    &__wrap {
+        padding: 0 6px;
+    }
+
+    &__left {
+        position: relative;
+        width: 30%;
+    }
+
+    &__search {
+        width: 100%;
+        padding: 6px 8px;
+        border: 1px solid $border-c;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+
+        &:focus {
+            outline: none;
+            border-color: #1890ff;
+        }
+    }
+
+    &__search-btn {
+        position: absolute;
+        background: transparent;
+        border: none;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        svg {
+            fill: #8c8c8c;
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            svg {
+                fill: #1890ff !important;
+            }
+        }
+    }
+}
